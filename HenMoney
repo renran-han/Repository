@@ -1,0 +1,23 @@
+/*
+描述：
+现有百钱，欲买百鸡。
+一只公鸡cock价值五钱，一只母鸡hen价值三钱，三只小鸡chick价值一钱。
+ */
+publi
+public class HenMoney {
+	public static void main(String[] args) {
+		int cock,hen,chick;//公鸡，母鸡和小鸡
+		for(cock=1;cock<=20;cock++){
+			for(hen=1;hen<=33;hen++){
+				for(chick=3;chick<=99;chick+=3){
+					if(cock*5+hen*3+chick/3==100){//百钱
+						if(cock+hen+chick==100){//百鸡
+							System.out.println("公鸡："+cock+" 母鸡:"+hen+" 小鸡:"+chick );
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
